@@ -1,0 +1,197 @@
+    <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لیلیان | خانه</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body class="bg-white text-gray-900 font-sans overflow-x-hidden">
+
+
+
+          <!--menu-->
+        <div class="max-w-360 lg:h-16.25 h-auto">
+          <div
+            class="max-w-7xl h-full mx-auto flex flex-wrap lg:flex-row flex-col justify-between items-center gap-y-4"
+          >
+            <div><img src="./src/images/Logo.png" alt="" /></div>
+            <div class="w-fit h-6">
+              <nav
+                class="w-full h-full flex flex-wrap lg:flex-row flex-col items-center gap-x-3"
+              >
+                <div>
+                  <a href="./zanane.html" class="font-sans font-bold">زنانه</a>
+                </div>
+                <div><a href="#" class="font-sans font-bold">مردانه</a></div>
+                <div><a href="./sabad/sabad.html" class="font-sans font-bold">درباره ما</a></div>
+                <div>
+                  <a href="./sabad/sabad.html" class="font-sans font-bold">تماس با ما</a>
+                </div>
+              </nav>
+            </div>
+
+            <div class="w-26 h-6">
+              <nav
+                class="w-full flex flex-row flex-wrap justify-between items-center gap-x-2"
+              >
+                <div>
+                  <a href="#"><img src="./src/images/Search.png" alt="" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="./src/images/User Alt.png" alt="" /></a>
+                </div>
+                <div>
+                  <a href="#">
+                    <img src="./src/images/Shopping Cart.png" alt=""
+                  /></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--finish menu-->
+
+
+  <section class="w-full bg-[#0b0b0b] text-white flex flex-col justify-center items-center py-28 px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-wide">black friday</h1>
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">جمعه سیاه</h2>
+    <p class="text-base md:text-lg mb-10 text-gray-200">۳۰٪ تا ۵۰٪ تخفیف روی تمامی محصولات</p>
+    <a href="zanane.html" class="bg-white text-black font-bold py-3 px-12 text-sm md:text-base hover:bg-gray-200 transition-colors">
+      مشاهده محصولات
+    </a>
+  </section>
+
+  <!-- ================= 3. سه عکس دسته‌بندی ================= -->
+  <section class="w-full max-w-7xl mx-auto py-12 px-4 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <a href="majlesi-zanane.html" class="group relative block overflow-hidden">
+        <img src="./src/images/cat-majlesi.png" alt="لباس‌های مجلسی" class="w-full h-112.5 object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute bottom-4 right-4">
+          <span class="text-white font-bold text-lg drop-shadow-md">لباس‌های مجلسی</span>
+        </div>
+      </a>
+
+      <a href="pashmal.html" class="group relative block overflow-hidden">
+        <img src="./src/images/cat-pashm.png" alt="لباس‌های پشمال" class="w-full h-112.5 object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute bottom-4 right-4">
+          <span class="text-white font-bold text-lg drop-shadow-md">لباس‌های پشمال</span>
+        </div>
+      </a>
+
+      <a href="jadid.html" class="group relative block overflow-hidden">
+        <img src="./src/images/cat-jadid.png" alt="جدیدترین محصولات" class="w-full h-112.5 object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute bottom-4 right-4">
+          <span class="text-white font-bold text-lg drop-shadow-md">جدیدترین محصولات</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- بقیه سکشن‌های قبلی (زنانه، مردانه، فوتر) اینجا قرار می‌گیرن... -->
+
+
+  <!-- ================= 4. سبد خرید کشویی (Drawer) ================= -->
+  
+  <!-- پس‌زمینه تاریک (Overlay) -->
+  <div class="fixed inset-0 bg-black/40 z-40 hidden" id="cart-overlay"></div>
+
+  <!-- پنل سبد خرید -->
+  <div id="cart-drawer" class="fixed top-0 right-0 w-full md:w-87.5 h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    
+    <!-- هدر سبد -->
+    <div class="flex items-center justify-between p-4 border-b border-gray-100">
+      <button onclick="closeCart()" class="text-gray-400 hover:text-black transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <h2 class="text-[16px] font-bold text-gray-800">ادامه خرید</h2>
+    </div>
+
+    <!-- محصولات داخل سبد -->
+    <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-6">
+      
+      <!-- آیتم ۱: کت بلند پشمی -->
+      <div class="flex gap-3 border-b border-gray-100 pb-4">
+        <div class="w-16 h-20 bg-[#f4f4f4] flex-shrink:0">
+          <img src="./src/images/cart-1.png" alt="کت بلند پشمی" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col justify-between flex-1">
+          <div class="flex justify-between items-start">
+            <span class="text-sm font-bold text-gray-800">کت بلند پشمی</span>
+            <button class="text-gray-400 hover:text-black text-xs">✕</button>
+          </div>
+          <span class="text-xs text-gray-500">سایز: M</span>
+          <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center border border-gray-200 text-xs">
+              <button class="px-2 py-0.5 text-gray-500 hover:text-black">-</button>
+              <span class="px-2 py-0.5 font-bold">1</span>
+              <button class="px-2 py-0.5 text-gray-500 hover:text-black">+</button>
+            </div>
+            <span class="text-red-600 text-xs font-bold">۳.۸۰۰.۰۰۰ تومان</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- آیتم ۲: پلیور یقه اسکی -->
+      <div class="flex gap-3 pb-4">
+        <div class="w-16 h-20 bg-[#f4f4f4] flex-shrink:0">
+          <img src="./src/images/cart-2.png" alt="پلیور یقه اسکی" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col justify-between flex-1">
+          <div class="flex justify-between items-start">
+            <span class="text-sm font-bold text-gray-800">پلیور یقه اسکی</span>
+            <button class="text-gray-400 hover:text-black text-xs">✕</button>
+          </div>
+          <span class="text-xs text-gray-500">سایز: S</span>
+          <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center border border-gray-200 text-xs">
+              <button class="px-2 py-0.5 text-gray-500 hover:text-black">-</button>
+              <span class="px-2 py-0.5 font-bold">1</span>
+              <button class="px-2 py-0.5 text-gray-500 hover:text-black">+</button>
+            </div>
+            <span class="text-red-600 text-xs font-bold">۱.۲۰۰.۰۰۰ تومان</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- فوتر سبد (جمع کل و دکمه خرید) -->
+    <div class="p-4 border-t border-gray-100 bg-white">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-sm font-bold text-gray-800">جمع:</span>
+        <span class="text-base font-bold text-gray-900">۵.۰۰۰.۰۰۰ تومان</span>
+      </div>
+      <button class="w-full bg-[#7a7a7a] text-white py-2.5 text-sm font-bold hover:bg-gray-700 transition-colors">
+        خرید
+      </button>
+    </div>
+
+  </div>
+
+  <!-- 🔴 اسکریپت باز و بسته کردن سبد خرید -->
+  <script>
+    const drawer = document.getElementById('cart-drawer');
+    const overlay = document.getElementById('cart-overlay');
+    
+    function openCart() {
+      drawer.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+    }
+    
+    function closeCart() {
+      drawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    }
+
+    // بستن سبد با کلیک روی پس‌زمینه تاریک
+    overlay.addEventListener('click', closeCart);
+  </script>
+
+</body>
+</html>
+</body>
+</html>

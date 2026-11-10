@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- start product & cart drawer page -->
+<div class="w-full relative font-sans dir-rtl bg-white">
+
+  <!-- ================= 1. صفحه اصلی محصول ================= -->
+  <div class="max-w-7xl mx-auto py-8 px-4 lg:px-8">
+    
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+      
+      <!-- سمت راست: اطلاعات محصول -->
+      <div class="w-full lg:w-1/2 flex flex-col justify-center">
+        <!-- عنوان و قیمت -->
+        <h1 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-3">پلیور یقه اسکی</h1>
+        <div class="flex items-center gap-3 mb-5">
+          <span class="text-gray-400 text-sm line-through">۱.۷۰۰.۰۰۰ تومان</span>
+          <span class="text-red-600 font-bold text-2xl">۱.۲۰۰.۰۰۰ تومان</span>
+        </div>
+
+        <!-- امتیاز -->
+        <div class="flex items-center gap-2 mb-6">
+          <div class="flex text-gray-800 text-sm">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-300">★</span>
+          </div>
+        </div>
+
+        <!-- توضیحات -->
+        <p class="text-gray-600 text-sm leading-loose mb-10 text-justify">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+        </p>
+
+        <!-- انتخاب سایز -->
+        <div class="mb-6 border-t border-gray-200 pt-6">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-sm font-bold text-gray-800">انتخاب سایز:</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <button class="w-10 h-10 border border-gray-300 text-sm text-gray-400 hover:border-black hover:text-black transition">XS</button>
+            <button class="w-10 h-10 border border-gray-300 text-sm hover:border-black focus:border-black transition">S</button>
+            <button class="w-10 h-10 border border-gray-300 text-sm hover:border-black focus:border-black transition">M</button>
+            <button class="w-10 h-10 border border-gray-300 text-sm hover:border-black focus:border-black transition">L</button>
+            <button class="w-10 h-10 border border-gray-300 text-sm text-gray-400 hover:border-black hover:text-black transition">XL</button>
+          </div>
+          <span class="text-xs text-gray-400 mt-3 block">راهنمای سایز</span>
+        </div>
+
+        <!-- انتخاب رنگ (مشکی و قرمز تیره) -->
+        <div class="mb-10">
+          <span class="text-sm font-bold text-gray-800 block mb-3">انتخاب رنگ:</span>
+          <div class="flex items-center gap-3">
+            <button class="w-8 h-8 rounded-full bg-[#2b2b2b] border-2 border-transparent hover:border-gray-400 focus:border-black transition"></button>
+            <button class="w-8 h-8 rounded-full bg-[#5c1a1a] border-2 border-transparent hover:border-gray-400 focus:border-black transition"></button>
+          </div>
+        </div>
+
+        <!-- دکمه افزودن به سبد خرید -->
+        <div class="flex items-center gap-4 border-t border-gray-200 pt-6">
+          <div class="flex items-center border border-gray-300">
+            <button class="px-4 py-3 text-gray-500 hover:text-black">-</button>
+            <span class="px-2 py-3 text-sm font-bold">1</span>
+            <button class="px-4 py-3 text-gray-500 hover:text-black">+</button>
+          </div>
+          <button class="flex-1 bg-[#f0f0f0] text-black border border-gray-300 py-3 px-8 text-sm font-bold hover:bg-gray-200 transition-colors">
+            افزودن به سبد خرید
+          </button>
+        </div>
+      </div>
+
+      <!-- سمت چپ: گالری عکس -->
+      <div class="w-full lg:w-1/2 flex flex-row-reverse gap-4">
+        <!-- عکس اصلی -->
+        <div class="w-[85%] bg-[#f4f4f4] flex items-center justify-center">
+          <img src="./src/images/polo-main.png" alt="پلیور یقه اسکی" class="w-full h-auto object-cover" />
+        </div>
+        <!-- عکس‌های بندانگشتی -->
+        <div class="w-[15%] flex flex-col gap-4">
+          <img src="./src/images/polo-thumb-1.png" alt="" class="w-full h-24 object-cover cursor-pointer border border-transparent hover:border-gray-400 transition bg-[#f4f4f4]" />
+          <img src="./src/images/polo-thumb-2.png" alt="" class="w-full h-24 object-cover cursor-pointer border border-transparent hover:border-gray-400 transition bg-[#f4f4f4]" />
+          <img src="./src/images/polo-thumb-3.png" alt="" class="w-full h-24 object-cover cursor-pointer border border-transparent hover:border-gray-400 transition bg-[#f4f4f4]" />
+          <img src="./src/images/polo-thumb-4.png" alt="" class="w-full h-24 object-cover cursor-pointer border border-transparent hover:border-gray-400 transition bg-[#f4f4f4]" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= 2. سبد خرید کشویی (Drawer) ================= -->
+  <!-- پس‌زمینه تاریک -->
+  <div class="fixed inset-0 bg-black/40 z-40 hidden" id="cart-overlay"></div>
+
+  <!-- پنل سبد خرید -->
+  <div id="cart-drawer" class="fixed top-0 right-0 w-full md:w-95 h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    
+    <!-- هدر سبد -->
+    <div class="flex items-center justify-between p-5 border-b border-gray-100">
+      <button class="text-gray-400 hover:text-black transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <h2 class="text-lg font-bold text-gray-800">ادامه خرید</h2>
+    </div>
+
+    <!-- محصولات داخل سبد -->
+    <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-6">
+      
+      <!-- آیتم ۱: کت بلند پشمی -->
+      <div class="flex gap-4 border-b border-gray-100 pb-4">
+        <div class="w-20 h-24 bg-[#f4f4f4] flex-shrink:0">
+          <img src="./src/images/cart-1.png" alt="کت بلند پشمی" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col justify-between flex-1">
+          <div class="flex justify-between items-start">
+            <span class="text-sm font-bold text-gray-800">کت بلند پشمی</span>
+            <button class="text-gray-400 hover:text-black text-xs">✕</button>
+          </div>
+          <span class="text-xs text-gray-500">سایز: M</span>
+          <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center border border-gray-200 text-xs">
+              <button class="px-2 py-1 text-gray-500 hover:text-black">-</button>
+              <span class="px-2 py-1 font-bold">1</span>
+              <button class="px-2 py-1 text-gray-500 hover:text-black">+</button>
+            </div>
+            <span class="text-red-600 text-sm font-bold">۳.۸۰۰.۰۰۰ تومان</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- آیتم ۲: پلیور یقه اسکی -->
+      <div class="flex gap-4 pb-4">
+        <div class="w-20 h-24 bg-[#f4f4f4] flex-shrink:0">
+          <img src="./src/images/cart-2.png" alt="پلیور یقه اسکی" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col justify-between flex-1">
+          <div class="flex justify-between items-start">
+            <span class="text-sm font-bold text-gray-800">پلیور یقه اسکی</span>
+            <button class="text-gray-400 hover:text-black text-xs">✕</button>
+          </div>
+          <span class="text-xs text-gray-500">سایز: S</span>
+          <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center border border-gray-200 text-xs">
+              <button class="px-2 py-1 text-gray-500 hover:text-black">-</button>
+              <span class="px-2 py-1 font-bold">1</span>
+              <button class="px-2 py-1 text-gray-500 hover:text-black">+</button>
+            </div>
+            <span class="text-red-600 text-sm font-bold">۱.۲۰۰.۰۰۰ تومان</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- فوتر سبد (جمع کل و دکمه خرید) -->
+    <div class="p-5 border-t border-gray-100 bg-white">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-sm font-bold text-gray-800">جمع:</span>
+        <span class="text-lg font-bold text-gray-900">۵.۰۰۰.۰۰۰ تومان</span>
+      </div>
+      <button class="w-full bg-[#7a7a7a] text-white py-3 text-sm font-bold hover:bg-gray-700 transition-colors">
+        خرید
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- اسکریپت باز و بسته کردن سبد خرید -->
+<script>
+  const drawer = document.getElementById('cart-drawer');
+  const overlay = document.getElementById('cart-overlay');
+  
+  function openCart() {
+    drawer.classList.remove('translate-x-full');
+    overlay.classList.remove('hidden');
+  }
+  
+  function closeCart() {
+    drawer.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  }
+
+  overlay.addEventListener('click', closeCart);
+
+  // برای تست
+  setTimeout(openCart, 1000);
+</script>
+<!-- end product & cart drawer page -->  
+</body>
+</html>
