@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سبد خرید | لیلیان</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../src/css/main.css">
+</head>
+<body class="bg-white text-gray-900 font-sans overflow-x-hidden">
+
+  <!-- ================= 1. هدر ================= -->
+  <header class="w-full bg-white py-4 px-4 lg:px-8 flex items-center justify-between border-b border-gray-100 relative z-30">
+    <div class="flex items-center gap-2">
+      <img src="../src/images/Logo.png" alt="لوگو" class="h-8" />
+    </div>
+    
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="../zanane.html" class="hover:text-gray-500 transition-colors">زنانه</a>
+      <a href="../men.html" class="hover:text-gray-500 transition-colors">مردانه</a>
+      <a href="../aboutus.html" class="hover:text-gray-500 transition-colors">درباره ما</a>
+      <a href="../contact.html" class="hover:text-gray-500 transition-colors">تماس با ما</a>
+    </nav>
+
+    <div class="flex items-center gap-4 text-gray-700">
+      <a href="#" class="hover:text-black transition-colors">
+        <img src="../src/images/Search.png" alt="جستجو" class="w-5 h-5" />
+      </a>
+      <a href="../login/login.html" class="hover:text-black transition-colors">
+        <img src="../src/images/User Alt.png" alt="پروفایل" class="w-5 h-5" />
+      </a>
+      <a href="#" class="hover:text-black transition-colors">
+        <img src="../src/images/Shopping Cart.png" alt="سبد خرید" class="w-5 h-5" />
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= 2. بخش اصلی سبد خرید ================= -->
+  <div class="w-full max-w-5xl mx-auto py-8 px-4 lg:px-8">
+
+    <!-- مراحل خرید -->
+    <div class="flex items-center justify-center gap-4 lg:gap-6 mb-10">
+      <!-- مرحله ۱ (تیک خورده) -->
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white text-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+      </div>
+      <div class="w-10 h-1px bg-gray-300"></div>
+      <!-- مرحله ۲ -->
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 text-gray-500 text-sm font-bold">۲</div>
+      <div class="w-10 h-1px bg-gray-300"></div>
+      <!-- مرحله ۳ -->
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 text-gray-500 text-sm font-bold">۳</div>
+      <div class="w-10 h-1px bg-gray-300"></div>
+      <!-- مرحله ۴ (فعال) -->
+      <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 text-white text-sm font-bold">۴</div>
+    </div>
+
+    <!-- بخش جدول و خلاصه سفارش -->
+    <div class="flex flex-col lg:flex-row gap-6 mb-16">
+      
+      <!-- سمت راست: جدول محصولات -->
+      <div class="w-full lg:w-2/3">
+        <!-- هدر جدول -->
+        <div class="hidden md:grid grid-cols-12 gap-2 bg-[#7a7a7a] text-white text-sm font-bold p-3 rounded-sm mb-2 text-center">
+          <div class="col-span-5 text-right pr-4">محصول</div>
+          <div class="col-span-2">تعداد</div>
+          <div class="col-span-2">قیمت</div>
+          <div class="col-span-3">قیمت کل</div>
+        </div>
+
+        <!-- لیست محصولات -->
+        <div class="flex flex-col border border-gray-100 rounded-sm">
+          
+          <!-- محصول ۱ -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center border-b border-gray-100 p-4">
+            <!-- عکس و نام -->
+            <div class="col-span-5 flex items-center gap-4 justify-between md:justify-start">
+              <span class="text-sm font-bold text-gray-800 order-2 md:order-1">کت بلند پشمی</span>
+              <div class="w-14 h-16 bg-[#f4f4f4] flex-shrink:0 order-1 md:order-2">
+                <img src="../src/images/cart-1.png" alt="کت بلند پشمی" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <!-- تعداد -->
+            <div class="col-span-2 flex justify-center mt-3 md:mt-0">
+              <div class="flex items-center border border-gray-300 text-xs">
+                <button class="px-2 py-1 text-gray-500 hover:text-black">-</button>
+                <span class="px-3 py-1 font-bold">1</span>
+                <button class="px-2 py-1 text-gray-500 hover:text-black">+</button>
+              </div>
+            </div>
+            <!-- قیمت واحد -->
+            <div class="col-span-2 flex justify-center text-xs text-gray-500 line-through mt-3 md:mt-0">
+              ۳.۸۰۰.۰۰۰ تومان
+            </div>
+            <!-- قیمت کل -->
+            <div class="col-span-3 flex justify-center text-sm font-bold text-red-600 mt-2 md:mt-0">
+              ۳.۸۰۰.۰۰۰ تومان
+            </div>
+          </div>
+
+          <!-- محصول ۲ -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-2 items-center p-4">
+            <!-- عکس و نام -->
+            <div class="col-span-5 flex items-center gap-4 justify-between md:justify-start">
+              <span class="text-sm font-bold text-gray-800 order-2 md:order-1">پلیور یقه اسکی</span>
+              <div class="w-14 h-16 bg-[#f4f4f4] flex-shrink-0 order-1 md:order-2">
+                <img src="../src/images/cart-2.png" alt="پلیور یقه اسکی" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <!-- تعداد -->
+            <div class="col-span-2 flex justify-center mt-3 md:mt-0">
+              <div class="flex items-center border border-gray-300 text-xs">
+                <button class="px-2 py-1 text-gray-500 hover:text-black">-</button>
+                <span class="px-3 py-1 font-bold">1</span>
+                <button class="px-2 py-1 text-gray-500 hover:text-black">+</button>
+              </div>
+            </div>
+            <!-- قیمت واحد -->
+            <div class="col-span-2 flex justify-center text-xs text-gray-500 line-through mt-3 md:mt-0">
+              ۱.۷۰۰.۰۰۰ تومان
+            </div>
+            <!-- قیمت کل -->
+            <div class="col-span-3 flex justify-center text-sm font-bold text-red-600 mt-2 md:mt-0">
+              ۱.۲۰۰.۰۰۰ تومان
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- سمت چپ: خلاصه سفارش -->
+      <div class="w-full lg:w-1/3">
+        <div class="border border-gray-100 p-5 rounded-sm">
+          <h3 class="text-[15px] font-bold text-gray-800 mb-4 border-b border-gray-100 pb-2">خلاصه خرید</h3>
+          
+          <div class="flex flex-col gap-3 text-xs text-gray-600 mb-6">
+            <div class="flex justify-between">
+              <span>قیمت کالاها (۲):</span>
+              <span class="font-bold text-gray-800">۵.۰۰۰.۰۰۰ تومان</span>
+            </div>
+            <div class="flex justify-between">
+              <span>هزینه ارسال:</span>
+              <span class="font-bold text-gray-800">۵۰.۰۰۰ تومان</span>
+            </div>
+            <div class="flex justify-between">
+              <span>مبلغ تخفیف:</span>
+              <span class="font-bold text-red-600">۵۰۰.۰۰۰ تومان</span>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center mb-4 border-t border-gray-200 pt-3">
+            <span class="font-bold text-gray-800 text-sm">مبلغ قابل پرداخت:</span>
+            <span class="font-bold text-red-600 text-base">۴.۵۵۰.۰۰۰ تومان</span>
+          </div>
+
+          <!-- دکمه ثبت سفارش (لینک به صفحه پرداخت) -->
+          <a href="./kharid3.html" class="block w-full text-center bg-red-600 text-white py-2.5 text-sm font-bold hover:bg-red-700 transition-colors rounded-sm mb-3">
+            ثبت سفارش
+          </a>
+          
+          <p class="text-[10px] text-gray-400 text-center">
+            لینک پرداخت در درگاه‌های بانکی تا ۳۰ دقیقه معتبر می‌باشد.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= 3. پیشنهادهای مشابه ================= -->
+    <div class="w-full">
+      <h2 class="text-sm font-bold text-gray-800 text-right mb-4">پیشنهادهای مشابه شما</h2>
+      
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <a href="#" class="flex flex-col group">
+          <div class="w-full aspect-3/4 overflow-hidden bg-[#f4f4f4]">
+            <img src="../src/images/sim-1.png" alt="کاپشن بلند کلا" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity" />
+          </div>
+          <p class="text-[13px] font-bold mt-2 text-right text-gray-800">کاپشن بلند کلا</p>
+          <div class="flex items-center gap-2 mt-1 text-right">
+            <span class="text-gray-400 text-[10px] line-through">۲.۸۰۰.۰۰۰ تومان</span>
+            <span class="text-red-600 font-bold text-[11px]">۱.۷۸۰.۰۰۰ تومان</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex flex-col group">
+          <div class="w-full aspect-3/4 overflow-hidden bg-[#f4f4f4]">
+            <img src="../src/images/sim-2.png" alt="کت بلند پاییزی" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity" />
+          </div>
+          <p class="text-[13px] font-bold mt-2 text-right text-gray-800">کت بلند پاییزی</p>
+          <div class="flex items-center gap-2 mt-1 text-right">
+            <span class="text-gray-400 text-[10px] line-through">۴.۵۰۰.۰۰۰ تومان</span>
+            <span class="text-red-600 font-bold text-[11px]">۴.۵۰۰.۰۰۰ تومان</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex flex-col group">
+          <div class="w-full aspect-3/4 overflow-hidden bg-[#f4f4f4]">
+            <img src="../src/images/sim-3.png" alt="پافر بلند زمستانی" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity" />
+          </div>
+          <p class="text-[13px] font-bold mt-2 text-right text-gray-800">پافر بلند زمستانی</p>
+          <div class="flex items-center gap-2 mt-1 text-right">
+            <span class="text-gray-400 text-[10px] line-through">۸.۱۰۰.۰۰۰ تومان</span>
+            <span class="text-red-600 font-bold text-[11px]">۷.۲۰۰.۰۰۰ تومان</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex flex-col group">
+          <div class="w-full aspect-3/4 overflow-hidden bg-[#f4f4f4]">
+            <img src="../src/images/sim-4.png" alt="پافر زمستانی" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity" />
+          </div>
+          <p class="text-[13px] font-bold mt-2 text-right text-gray-800">پافر زمستانی</p>
+          <div class="flex items-center gap-2 mt-1 text-right">
+            <span class="text-gray-400 text-[10px] line-through">۸.۴۰۰.۰۰۰ تومان</span>
+            <span class="text-red-600 font-bold text-[11px]">۶.۳۰۰.۰۰۰ تومان</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= 4. فوتر ================= -->
+  <footer class="w-full bg-[#404040] text-white py-12 px-4 lg:px-8 font-sans mt-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6">
+      
+      <!-- فرم عضویت -->
+      <div class="flex flex-col lg:col-span-1">
+        <h3 class="text-[15px] font-bold mb-6 text-gray-100">اولین کسی باش که از تخفیف‌ها باخبر میشه</h3>
+        <form class="flex flex-col gap-3">
+          <input type="email" placeholder="ایمیل" class="w-full bg-[#999] text-white placeholder-white/80 px-3 py-2 text-sm text-right focus:outline-none focus:ring-1 focus:ring-white" />
+          <input type="text" placeholder="نام و شماره" class="w-full bg-[#999] text-white placeholder-white/80 px-3 py-2 text-sm text-right focus:outline-none focus:ring-1 focus:ring-white" />
+          <button type="submit" class="w-full border border-white text-white py-2 text-sm font-bold hover:bg-white hover:text-[#404040] transition-colors mt-1">اشتراک</button>
+        </form>
+      </div>
+
+      <!-- درباره لیلیان -->
+      <div class="flex flex-col">
+        <h3 class="text-[15px] font-bold mb-6 text-gray-100">درباره لیلیان</h3>
+        <ul class="flex flex-col gap-3 text-[13px] text-gray-300">
+          <li><a href="#" class="hover:text-white transition-colors">لینک خبر لیلیان</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">همکاری با ما</a></li>
+          <li><a href="../contact.html" class="hover:text-white transition-colors">تماس با ما</a></li>
+          <li><a href="../aboutus.html" class="hover:text-white transition-colors">درباره ما</a></li>
+        </ul>
+      </div>
+
+      <!-- خدمات مشتریان -->
+      <div class="flex flex-col">
+        <h3 class="text-[15px] font-bold mb-6 text-gray-100">خدمات مشتریان</h3>
+        <ul class="flex flex-col gap-3 text-[13px] text-gray-300">
+          <li><a href="#" class="hover:text-white transition-colors">پاسخ به سوالات متداول</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">شرایط استفاده</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">حریم خصوصی</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">گزارش باگ</a></li>
+        </ul>
+      </div>
+
+      <!-- راهنمای خرید -->
+      <div class="flex flex-col">
+        <h3 class="text-[15px] font-bold mb-6 text-gray-100">راهنمای خرید از لیلیان</h3>
+        <ul class="flex flex-col gap-3 text-[13px] text-gray-300">
+          <li><a href="#" class="hover:text-white transition-colors">خرید فصلی</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">نحوه ثبت سفارش</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">رویه ارسال سفارش</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">شیوه‌های پرداخت</a></li>
+        </ul>
+      </div>
+
+      <!-- شبکه‌های اجتماعی -->
+      <div class="flex flex-col items-start lg:items-end">
+        <div class="flex items-center gap-2 mb-6">
+          <img src="../src/images/logo-footer.png" alt="لوگو">
+        </div>
+        <div class="flex items-center gap-3 text-gray-200">
+          <a href="#" class="hover:text-white transition-colors"><img src="../src/images/instagram.png" alt="اینستاگرام"></a>
+          <a href="#" class="hover:text-white transition-colors"><img src="../src/images/Linkedin In.png" alt="لینکدین"></a>
+          <a href="#" class="hover:text-white transition-colors"><img src="../src/images/Twitter.png" alt="توییتر"></a>
+          <a href="#" class="hover:text-white transition-colors"><img src="../src/images/Pinterest P.png" alt="پینترست"></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
